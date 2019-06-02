@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sportski tereni na otvorenom</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+			
+			/* Remove the navbar's default margin-bottom and rounded borders */
+			.navbar {
+				/*background-image: url("https://lh3.googleusercontent.com/XCRlhdyBQCqC1Si7ZWPbHGpShd4j9Xanzy-AbkRkbi409Ng0VuJgDYjjRUBViBKnWPAuZFQ5JXyYf0durcX0OGoFVDaOFs1FGF__6PU83wiDU0xZqaN6bZmTVi0T3rrUi4IhHHfTj1aci6UjISzsekz9Z84XCcumaFHObtD9wOSGn9gLcrjki9yiSRqyE9drcE2z0WBQR2hzLuqwTdXRL2ycV1l-J8uH1YjdoBul_TJ8oTxXt4f2q_Ju8ag_e3ukj1bhFEgtZFvekD5NldCeZeThjgebaBiNIUU0vSA1RK96j5HxfVHasx6TJBl52m2tabe0PF6FbIsvvSJ7FxzaJuvha1FYF7FskEq35i-8InosC5lN0SE9wL_6mSJRtZ-m0RBGTf2e1d5mInkXMjSIRlI2KiqDbfSwUIcVcYyLdXM0mPEVroyrkaZCVpUNtA3bVWp03Ea6Tjn4XU2E64bNPQq4bN7he5c1ybkosP3bXtyoriBOfMDmUxv8HLBcNBXuP-5lGJoYVzsGLKiY0CZJbRKfFk3O-GoZN5xC4iuGyRnwS07JU6KXSnoVUzyCIEZYojH5AY7OK6K9eNO0JMxxPLmIuSPWC1FGoSbXmou0mIFH6REIEvzTATf1zneNdaP3Z_WF9GftaDlVVm-M0RIMhhCj_G2SaxA=w1679-h944-no");*/
+				margin-bottom: 0;
+				border-radius: 0;
+			}
+			
+			/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+			.row.content {height: 850px}
+
+			.sidenav {
+				background-image: url("https://lh3.googleusercontent.com/q-3FxusJiZl7dkxAKPIO33QJfSA-tFY7du8Uv3BwgtfmIViyGhOkCIvGZlOmg6qtIxfhlJOd93Agw7Yx90pIvhZWtXFub167veCfIvMmAXpSzaFSOM6_KyIoW8RM9nVI8rwUcLUaRXRG1IjTlYJkv67KuuwTneOlpDOBOJgTQlAnSyqp_TLuMRsSa9S2kdp8qErzrUjEC8Zf9Tg2P6DjBxHS29lua-voDMm8XC9VzWXGgeuIWfTmVVaKCsZLINIBDF8PjVF_xoww-eGuHkYvJxfhezFPdAaziuznGzoKNacl8l_MTpJQFhtpfEUGhnCmMdBvg_ppcN80TnBitzptjoyU5kgf7kNWTxCXsL-4RwgB9eUc5repXRDxs0Nb_LTXYqfkSUMa3PFUIdsIjsLHvn9jwk1wv7AKmpOH4JFA3dp2zkKY42YHou3TvbN-jokiYzP5N_z3AkiAlpJM0Hm6rLznmpqsJWh8d4yturw8IDwUzHy3WUSTuQd85jgtS__RH-TnLxOtVL9A-1J015C12DQuwLOBEbUP_iJaYhR6GjCml0D5243T9mOs1nBf4ow0-zhRXCFVKCnclWmCFm-0X8XUegYSvh7xpOQ4dUnkeJLWhhsEnkxcv3nZlWNTjKJXIjuvc65G6uiVkYXz6pw07WlZGBFRmlw=w1000-h638-no");
+				background-repeat: no-repeat;
+				background-size: cover;
+				padding-top: 0px;
+			/*	background-color: #5871fc;
+			*/
+				height: 100%;
+			}
+
+			.fa {
+				padding: 17px;
+				font-size: large;
+				width: 50px;
+				text-align: center;
+				text-decoration: none;
+				border-radius: 50%;
+			}
+
+			.fa:hover {
+				opacity: 0.9;
+			}
+
+			.fa-facebook {
+				background: #3B5998;
+				color: white;
+			}
+
+			.fa-twitter {
+				background: #55ACEE;
+				color: white;
+			}
+
+			.fa-instagram {
+				background: #e95950;
+				color: white;
+			}
+
+			.fa-tumblr {
+				background: #32506d;
+				color: white;
+			}
+
+			.glyphicon.glyphicon-star {
+				font-size: 25px;
+			}
+			
+			footer {
+				background-color: white;
+				/*background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;*/
+				color: rgb(2, 2, 2);
+				padding: 15px;
+			}
+			
+			@media screen and (max-width: 767px) {
+				.sidenav {
+					height: auto;
+					padding: 20px;
+				}
+				.row.content {height:auto;}
+			}
+
+			.vertLine {
+				border-left: white;
+			}
+
+			.src {
+				align
+			}
+		</style>
+    
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+			
+				<a href="file:///C:/Users/AMD/Desktop/faks/6.%20semestar/Interakcija%20covek%20racunar/vezbe%20-%20akademske%20studije/bootstrap/pocetna.html">
+					<img src="https://lh3.googleusercontent.com/mmWHro8fvVtqsX0eHFLS8BfrQMDnCeXGZUbEFM5vC1p06wBjvqXCjgCXK5p8HLRk97H1ZpnO_7QWiYcnz6jjkyxT8yVpfhEqvcqhmAwqERSLptdkfDL_Y_8xl0aS-dh0ZCSoaza45SpP5vtUsxXAYiITVqh7chZzGE5lpMg3GOJx5ql-0bEdB968of48UBYXUB2gPaDsfAJ8XChsjQkHwR3NVYFIRTNir571ZS-Zu9Av5QI-wWg0kr6fS_VQgbPfqnmOtC-m8ua0HYfY25BkAP6COV2Oe9z55K7qUKYVJ_0kBKGqaS8MjMew5kOBWoOr8-BauotBbuJusx-xv8kvJr0-3hpuDVmEay1KX1XCddMzBo064Q45RGOtaRnqN0L4SP6YfinEg9cl2Nb4fDVO8C6BBRToRVemdDaDeNagkl3tK-gxfYl-yCF3iaE-Pnziw9b6hv1vSFl4nwZ4PQmKagN-B6XbAOSOLcHqIxh6_-fdus0fsKR4iV4iw6JPpA_qDd2vj0-zmf_Y2LY5SNoGsOl7oFDYn1Z-DordG06Lc7SEVfyMvyDsZLiziCiM3p98MdF_9hDn8MProjfZWX5b026UzQy5RsDJK57o_dS0SZvvK364_nLaZhSnphYnS2hljm4JuWCDWOU4D3zO8NTl2sorS3wvAaU=s400-no" 
+					width="55" height="50" alt="logo" />
+				</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav">
+					<li class="active"><a href="file:///C:/Users/AMD/Desktop/faks/6.%20semestar/Interakcija%20covek%20racunar/vezbe%20-%20akademske%20studije/bootstrap/pocetna.html">Pocetna</a></li>
+					<li><a href="file:///C:/Users/AMD/Desktop/faks/6.%20semestar/Interakcija%20covek%20racunar/vezbe%20-%20akademske%20studije/bootstrap/o%20nama.html">O nama</a></li>
+				   
+			  </ul>
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-comment"></span> Chat</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-bell"></span> Notifications</a></li>
+				<li><a href="file:///C:/Users/AMD/Desktop/faks/6.%20semestar/Interakcija%20covek%20racunar/vezbe%20-%20akademske%20studije/bootstrap/log%20in.html">
+					<span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
+				<li><a href="file:///C:/Users/AMD/Desktop/faks/6.%20semestar/Interakcija%20covek%20racunar/vezbe%20-%20akademske%20studije/bootstrap/sing%20up.html">
+					<span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+			  </ul>
+		</div>
+		</div>
+	</nav>
+  
+	<div class="container-fluid text-center">
+		<div class="row content">
+			<div class="col-sm-2 sidenav">
+				<div class="well">
+					<h2>Top tereni</h2>
+					
+						<a href="#">
+							<img src="https://lh3.googleusercontent.com/AqsxOrMWAAj_RWjrx8Aj1ZO2h4H5oTR-0PrFHn1uN3UekEVP9gEKbOKAJCS-hZptbnXpRQU0XpsvRnHPv1-8JT8hv-o8sjzqImct9_e9wKPvUuwPMQscb80zMWC4RSSHHn5wOamsBOduQdrI99VNUtZfocvml1yaDdErdqXzMh5klB5khRSdjuIgqPoS9-vMFvI1EuQabdnHX1u-AYCqk5BgD7yvtQxSy6RiIcNgW8kD2HY3nUWX-prJM1n-7hTUnGk_IoSjxpuBogsG8uQAHbjvZIfaCl6wR8b9zHFfTOkPCdCAVp00MiPNeQHEGnK85O5SWtSKHhr1d9ERwmmMoPp5icdzr7O0yR9nMKEOp6-y-sIBze9I9pnnV4t14RxZNcs-6fqkU8O3krVNgHO5yZhylOZfoc28s02ye5wnGiQDWq_DGzYvyAMbuaJH6xbei7tEJrLALHGPbdNyWBFmEOimGgKXDCX0x9VXF9AbkIrDv1CnUNt6FAeHbo9OIuEdphHwO30tqYduS51j-8HBwsnWKijOCJxnB06lkfybgIHmiZn_SsTIHwZY0M1LuwolOVerZLmeKAyFTLP8tGb_cmktB0OCJyu6AkuStkjNOix594CxxIqkIFxxWn6w8ULle3gSML9KCccVDHuwdfhztq46PuiYPTM=w600-h450-no"
+							width="170" height="115" alt="Teren Blok 63"/>
+							<br>
+							<font size="4.5">Teren Blok 63</font>
+							<br>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<br>
+							<span style="font-size: 28px" class="glyphicon glyphicon-comment"></span>
+							<font size="4.2" color="red">100</font>
+						</a>
+							<a href="#">
+									<button>Napravi<br>objavu</button>
+							</a>
+					<hr>
+						<a href="#">
+							<img src="https://lh3.googleusercontent.com/XCRlhdyBQCqC1Si7ZWPbHGpShd4j9Xanzy-AbkRkbi409Ng0VuJgDYjjRUBViBKnWPAuZFQ5JXyYf0durcX0OGoFVDaOFs1FGF__6PU83wiDU0xZqaN6bZmTVi0T3rrUi4IhHHfTj1aci6UjISzsekz9Z84XCcumaFHObtD9wOSGn9gLcrjki9yiSRqyE9drcE2z0WBQR2hzLuqwTdXRL2ycV1l-J8uH1YjdoBul_TJ8oTxXt4f2q_Ju8ag_e3ukj1bhFEgtZFvekD5NldCeZeThjgebaBiNIUU0vSA1RK96j5HxfVHasx6TJBl52m2tabe0PF6FbIsvvSJ7FxzaJuvha1FYF7FskEq35i-8InosC5lN0SE9wL_6mSJRtZ-m0RBGTf2e1d5mInkXMjSIRlI2KiqDbfSwUIcVcYyLdXM0mPEVroyrkaZCVpUNtA3bVWp03Ea6Tjn4XU2E64bNPQq4bN7he5c1ybkosP3bXtyoriBOfMDmUxv8HLBcNBXuP-5lGJoYVzsGLKiY0CZJbRKfFk3O-GoZN5xC4iuGyRnwS07JU6KXSnoVUzyCIEZYojH5AY7OK6K9eNO0JMxxPLmIuSPWC1FGoSbXmou0mIFH6REIEvzTATf1zneNdaP3Z_WF9GftaDlVVm-M0RIMhhCj_G2SaxA=w1679-h944-no"
+							width="170" height="115" alt="Teren Blok 62"/>
+								<br>
+								<font size="4.5">Teren Blok 62</font>
+								<br>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star"></span>
+								<br>
+								<span style="font-size: 28px" class="glyphicon glyphicon-comment"></span>
+								<font size="4.2" color="red">95</font>
+						</a>
+							<a href="#">
+									<button>Napravi<br>objavu</button>
+							</a>
+					<hr>
+						<a href="#">
+								<img src="https://lh3.googleusercontent.com/BsoJtkGPhSNglXcosRFMwLazrG8o7RKwlMqptmZ_NMM6TTF8LniDdzmJScv3nE8FHDAcEOZNNiZWineFMra1zV-dRgx4yVgRklLh9-NsLhQwSSS8sTiztq8QXIZoUzfnmkeJLX2ZoXtS8XX9Gx7zvSQjZsKKmWI1yrAdQs_4pjBX5yyFGgIh3J88uoYLV3Wzrrx3e4A-etCzHk4cXiYskpfwvUmAVA_tQNI8qY-cDQFTvK7iuga2POMeW7OAun9OXCFGGc1CSCmoGLRFZy-iJg-OsrZWKLmsbLQneB_TlcURmaM7rynBJrNRVh84f8cLtwiSsxt1fECzn8eTdA0NAoZo6KBORriefMQOsgdg6IcLnt3pJpPYYmfk8dsnc8LKVaAWu7OkBrMf0AUlmeBOB47BYrIIsf8QY19w6VGKL6chYHD6ntzIuCSzePTmHrMtUZO7NDKnOWfWQTY_XgNaH8Km4ERMLZGflCQDU_PcucfWYKYuxf83efVf6bkj4q2XyVVsQfpjWKxJxxfYVMJ3kXb5JnlWuoQGBoWJUOM7d0Us_LkZb5EXSAt4rrlF2OtFPK97FM5ZWuvKWAWprPPSmpevo4enAsoA6j81s3v9nW98D0eThGg-TXzU6JK4SBhf09Ize1P_GC1fuUZ2LweFZXdSxaEKnm8=w800-h600-no"
+								width="170" height="115" alt="Teren Raiffeisen"/>
+									<br>
+									<font size="4.5">Teren Raiffeisen</font>
+									<br>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<span class="glyphicon glyphicon-star"></span>
+									<br>
+									<span style="font-size: 28px" class="glyphicon glyphicon-comment"></span>
+									<font size="4.2" color="red">90</font>
+							</a>
+								<a href="#">
+										<button>Napravi<br>objavu</button>
+							</a>
+				</div>
+			
+			</div>
+
+		<div class="col-sm-8 text-center">
+			<h1>Sportski tereni na otvorenom</h1>
+			<!--
+				<h2>U zdravom telu zdrav duh</h2>
+			-->
+			<hr>
+		</div>
+		<div class="col-sm-8 text-left">
+			<select name="Grad">
+					<option value="Beograd">Beograd</option>
+					<option value="Novi Sad">Novi Sad</option>
+					<option value="Nis">Nis</option>
+					<option value="Kragujevac">Kragujevac</option>
+					<option value="Pancevo">Pancevo</option>
+					<option value="Subotica">Subotica</option>
+					<option value="Kraljevo">Kraljevo</option>
+			</select>
+			<select name="Opstina">
+					<option value="Novi Beograd">Novi Beograd</option>
+					<option value="Zemun">Zemun</option>
+					<option value="Palilula">Palilula</option>
+					<option value="Stari grad">Stari grad</option>
+					<option value="Čukarica">Čukarica</option>
+					<option value="Voždovac">Voždovac</option>
+					<option value="Zvezdara">Zvezdara</option>
+					<option value="Obrenovac">Obrenovac</option>
+			</select>
+			<select name="Tip sporta">
+					<option value="Fudbal">Fudbal</option>
+					<option value="Kosarka">Kosarka</option>
+					<option value="Tenis">Tenis</option>
+					<option value="Odbojka">Odbojka</option>
+					
+			</select>
+			<select name="Podloga">
+					<option value="Beton">Beton</option>
+					<option value="Trava">Trava</option>
+					<option value="Parket">Parket</option>
+					<option value="Guma">Guma</option>
+					<option value="Pesak">Pesak</option>
+			</select>
+			<input class="src" type="text" placeholder="Search..">
+
+		</div>
+			
+
+		<div class="col-sm-2 sidenav">
+			<div class="well">
+				<h2>Vremenska prognoza</h2>
+				<hr>
+				
+				<a target="_blank" href="https://www.booked.net/weather/belgrade-2997">
+					<img src="https://w.bookcdn.com/weather/picture/4_2997_1_1_5871fc_258_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=2&domid=w209&anc_id=83099"  alt="booked.net"/>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="col-sm-2 navbar-right">
+				
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+				
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-instagram"></a>
+				<button type="button"> Forum</button>
+		</div>
+		
+	</footer>
+
+</body>
+</html> 
